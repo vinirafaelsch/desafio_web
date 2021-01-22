@@ -6,23 +6,23 @@
     transform: translate(-50%, -50%)
 }
 
-html {
+.Cadastro html {
     background-color: #56baed;
 }
 
-body {
+.Cadastro body {
     font-family: "Poppins", sans-serif;
     height: 100vh;
 }
 
-a {
+.Cadastro a {
     color: #92badd;
     display:inline-block;
     text-decoration: none;
     font-weight: 400;
 }
 
-h2 {
+.Cadastro h2 {
     text-align: center;
     font-size: 16px;
     font-weight: 600;
@@ -32,11 +32,9 @@ h2 {
     color: #cccccc;
 }
 
-
-
 /* STRUCTURE */
 
-.wrapper {
+.Cadastro .wrapper {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -47,7 +45,7 @@ h2 {
 
 }
 
-#formContent {
+.Cadastro #formContent {
     -webkit-border-radius: 10px 10px 10px 10px;
     border-radius: 10px 10px 10px 10px;
     background: #fff;
@@ -61,7 +59,7 @@ h2 {
     text-align: center;
 }
 
-#formFooter {
+.Cadastro #formFooter {
     background-color: #f6f6f6;
     border-top: 1px solid #dce8f1;
     padding: 25px;
@@ -70,24 +68,20 @@ h2 {
     border-radius: 0 0 10px 10px;
 }
 
-
-
 /* TABS */
 
-h2.inactive {
+.Cadastro h2.inactive {
     color: #cccccc;
 }
 
-h2.active {
+.Cadastro h2.active {
     color: #0d0d0d;
     border-bottom: 2px solid #5fbae9;
 }
 
-
-
 /* FORM TYPOGRAPHY*/
 
-input[type=button], input[type=submit], input[type=reset]  {
+.Cadastro input[type=button], .Cadastro input[type=submit], .Cadastro input[type=reset]  {
     background-color: #56baed;
     border: none;
     color: white;
@@ -109,11 +103,11 @@ input[type=button], input[type=submit], input[type=reset]  {
     transition: all 0.3s ease-in-out;
 }
 
-input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover  {
+.Cadastro input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover  {
     background-color: #39ace7;
 }
 
-input[type=button]:active, input[type=submit]:active, input[type=reset]:active  {
+.Cadastro input[type=button]:active, input[type=submit]:active, input[type=reset]:active  {
     -moz-transform: scale(0.95);
     -webkit-transform: scale(0.95);
     -o-transform: scale(0.95);
@@ -121,7 +115,7 @@ input[type=button]:active, input[type=submit]:active, input[type=reset]:active  
     transform: scale(0.95);
 }
 
-input[type=text] {
+.Cadastro input[type=text] {
     background-color: #f6f6f6;
     border: none;
     color: #0d0d0d;
@@ -142,21 +136,19 @@ input[type=text] {
     border-radius: 5px 5px 5px 5px;
 }
 
-input[type=text]:focus {
+.Cadastro input[type=text]:focus {
     background-color: #fff;
     border-bottom: 2px solid #5fbae9;
 }
 
-input[type=text]::placeholder {
+.Cadastro input[type=text]::placeholder {
     color: #cccccc;
 }
-
-
 
 /* ANIMATIONS */
 
 /* Simple CSS3 Fade-in-down Animation */
-.fadeInDown {
+.Cadastro .fadeInDown {
     -webkit-animation-name: fadeInDown;
     animation-name: fadeInDown;
     -webkit-animation-duration: 1s;
@@ -165,7 +157,7 @@ input[type=text]::placeholder {
     animation-fill-mode: both;
 }
 
-@-webkit-keyframes fadeInDown {
+.Cadastro @-webkit-keyframes fadeInDown {
     0% {
         opacity: 0;
         -webkit-transform: translate3d(0, -100%, 0);
@@ -196,7 +188,7 @@ input[type=text]::placeholder {
 @-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 
-.fadeIn {
+.Cadastro .fadeIn {
     opacity:0;
     -webkit-animation:fadeIn ease-in 1;
     -moz-animation:fadeIn ease-in 1;
@@ -211,32 +203,32 @@ input[type=text]::placeholder {
     animation-duration:1s;
 }
 
-.fadeIn.first {
+.Cadastro .fadeIn.first {
     -webkit-animation-delay: 0.4s;
     -moz-animation-delay: 0.4s;
     animation-delay: 0.4s;
 }
 
-.fadeIn.second {
+.Cadastro .fadeIn.second {
     -webkit-animation-delay: 0.6s;
     -moz-animation-delay: 0.6s;
     animation-delay: 0.6s;
 }
 
-.fadeIn.third {
+.Cadastro .fadeIn.third {
     -webkit-animation-delay: 0.8s;
     -moz-animation-delay: 0.8s;
     animation-delay: 0.8s;
 }
 
-.fadeIn.fourth {
+.Cadastro .fadeIn.fourth {
     -webkit-animation-delay: 1s;
     -moz-animation-delay: 1s;
     animation-delay: 1s;
 }
 
 /* Simple CSS3 Fade-in Animation */
-.underlineHover:after {
+.Cadastro .underlineHover:after {
     display: block;
     left: 0;
     bottom: -10px;
@@ -247,22 +239,19 @@ input[type=text]::placeholder {
     transition: width 0.2s;
 }
 
-.underlineHover:hover {
+.Cadastro .underlineHover:hover {
     color: #0d0d0d;
 }
 
-.underlineHover:hover:after{
+.Cadastro .underlineHover:hover:after{
     width: 100%;
 }
 
-
-
 /* OTHERS */
-
-*:focus {
+.Cadastro *:focus {
     outline: none;
 }
 
-#icon {
+.Cadastro #icon {
     width:60%;
 }

@@ -10,14 +10,14 @@ const Login = props => (
                 { /* Formulario Login */ }
                 <form>
                     <h1>Login</h1>
-                    <input type="text" id="login" class="fadeIn second" name="login" placeholder="Usuário" />
-                    <input type="text" id="password" class="fadeIn third" name="login" placeholder="Senha" />
-                    <input type="submit" class="fadeIn fourth" value="Log In" />
+                    <input type="text" id="usuario" className="fadeIn second" name="login" placeholder="Usuário" />
+                    <input type="text" id="senha" className="fadeIn third" name="login" placeholder="Senha" />
+                    <input type="submit" className="fadeIn fourth" value="Entrar" />
                 </form>
 
                 { /* Criar nova conta */ }
                 <div id="formFooter">
-                    <Link class="underlineHover" to="cadastro">Criar nova conta</Link>
+                    <Link className="underlineHover" to="cadastro">Criar nova conta</Link>
                 </div>
             </div>
         </div>

@@ -1,0 +1,27 @@
+.Home {
+    margin-top: 3.5%;
+    width: 100vw;
+    padding: 0 250px 0 250px;
+    overflow:hidden;
+    background-color: lightgrey;
+
+}
+
+.Home .content {
+
+    background-color: white;
+}
+
+.Home .card {
+    width: 20rem;
+    margin: 20px 15px 15px 30px;
+}
+
+/*Linha horizontal*/
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+

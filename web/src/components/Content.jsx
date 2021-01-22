@@ -15,7 +15,7 @@ const Content = props => (
             <Route path="/compra-plano">
                 <CompraPlano />
             </Route>
-            <Route path="/Login">
+            <Route path="/login">
                 <Login />
             </Route>
             <Route path="/cadastro">
