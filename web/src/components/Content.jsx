@@ -2,7 +2,7 @@ import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 
 import Home from '../views/Home';
-import CompraPlano from '../views/CompraPlano';
+import PessoasCadastradas from '../views/PessoasCadastradas';
 import Login from '../views/Login';
 import Cadastro from "../views/Cadastro";
 
@@ -12,8 +12,8 @@ const Content = props => (
             <Route exact path="/">
                 <Home />
             </Route>
-            <Route path="/compra-plano">
-                <CompraPlano />
+            <Route path="/pessoas-cadastradas">
+                <PessoasCadastradas />
             </Route>
             <Route path="/login">
                 <Login />

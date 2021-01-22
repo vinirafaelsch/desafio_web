@@ -20,7 +20,7 @@ const Menu = props => (
                         <Link className="nav-link" to="/login">Login</Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link" to="/compra-plano">Compra de Plano</Link>
+                        <Link className="nav-link" to="/pessoas-cadastradas">Pessoas cadastradas</Link>
                     </li>
                 </ul>
             </div>

@@ -1,0 +1,12 @@
+.PessoasCadastradas {
+    margin-top: 3.5%;
+    width: 100vw;
+    padding: 0 250px 0 250px;
+    overflow:hidden;
+    background-color: lightgrey;
+}
+
+.PessoasCadastradas .content {
+    margin-top: 1%;
+    background-color: white;
+}

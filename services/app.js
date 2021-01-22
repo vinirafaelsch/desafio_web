@@ -18,8 +18,10 @@ const pool = new Pool({
 });
 
 // Insere um dado no banco de dados
-app.post("/insert/people", (req, res) => {
-    const { nome, email, usuario, senha } = req.body;
+app.post("/insert_people", (req, res) => {
+    const { nome, email, usuario, senha } = req.body.user;
+
+    console.log(req.body);
 
     pool.query(
         "INSERT INTO peoples (nome, email, usuario, senha) VALUES ($1, $2, $3, $4)",
