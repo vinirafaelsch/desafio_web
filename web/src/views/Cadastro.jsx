@@ -37,6 +37,8 @@ class Cadastro extends React.Component {
                 console.log(res);
                 console.log(res.data);
             })
+
+        alert('Usuário criado com sucesso!');
     }
 
 
