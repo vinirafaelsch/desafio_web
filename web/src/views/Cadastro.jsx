@@ -15,10 +15,7 @@ class Cadastro extends React.Component {
     // Atualiza valores das variáveis conforme alteração nos campos
     handleChange = event => {
         this.setState({
-            nome: event.target.value,
-            email: event.target.value,
-            usuario: event.target.value,
-            senha: event.target.value
+            [event.target.name]: event.target.value
         });
     }
 
