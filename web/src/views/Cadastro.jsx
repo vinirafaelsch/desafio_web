@@ -19,7 +19,7 @@ class Cadastro extends React.Component {
         });
     }
 
-    // Função que envia requisição para armazenar dado no bd
+    // Envia requisição para armazenar dados em banco de dados
     handleSubmit = event => {
         event.preventDefault();
 
@@ -42,7 +42,6 @@ class Cadastro extends React.Component {
 
     render() {
         return (
-
             <div className="Cadastro">
                 <div className="wrapper fadeInDown">
                     <div id="formContent">

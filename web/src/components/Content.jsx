@@ -6,6 +6,7 @@ import PessoasCadastradas from '../views/PessoasCadastradas';
 import Login from '../views/Login';
 import Cadastro from "../views/Cadastro";
 
+// Roteamento
 const Content = props => (
     <div className="Content">
         <Switch>

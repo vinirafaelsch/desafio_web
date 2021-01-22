@@ -5,6 +5,7 @@ import '../css/Login.css';
 import axios from "axios";
 
 class Login extends React.Component {
+
     state = {
         peoples: [],
         usuario: '',
@@ -16,6 +17,8 @@ class Login extends React.Component {
         this.handleSubmit = this.handleSubmit.bind(this);
     }
 
+    // Pré-carregamento de dados.
+    // Gambiarra para não precisar usar a função await do JS kk
     componentDidMount() {
         axios.get(`http://localhost:8000/usuario`)
             .then(res => {
@@ -32,10 +35,13 @@ class Login extends React.Component {
         });
     }
 
-    // Função que envia requisição para armazenar dado no bd
+    // Função requisita dados atualizados do bd
+    // Verifica se a conta está armazenada no bd ou não
+    // e exibe um alert ao usuário
     handleSubmit(event) {
         event.preventDefault();
 
+        // Faz requisição de usuarios cadastrados
         axios.get(`http://localhost:8000/usuario`)
             .then(res => {
                 console.log(res.data)
@@ -43,12 +49,14 @@ class Login extends React.Component {
                 this.setState({peoples});
             })
 
+        // Compara se o usuário inserido faz parte do banco de dados
         let comp = false;
         this.state.peoples.forEach(people => {
             if ((people.usuario == this.state.usuario) && people.senha == this.state.senha)
                 comp = true;
         })
 
+        // Exibe um alert, conforme saída do if acima
         if (comp)
             alert('Bem vindo!')
         else

@@ -5,12 +5,13 @@ import '../css/PessoasCadastradas.css'
 import Footer from "../components/Footer";
 
 class PessoasCadastradas extends React.Component {
-    // Criação de vetor para armazenar usuários cadastrados
+
     state = {
         users: []
     }
 
-    // Executa função quando página é carregada
+    // Assim que página é carregada, faz uma requisição para site externo.
+    // Site possui uma lista de usuários
     componentDidMount() {
         axios.get(`https://jsonplaceholder.typicode.com/users`)
             .then(res => {
